@@ -29,7 +29,7 @@ brew tap homebrew/cask-fonts &&
 brew install --cask font-fira-code-nerd-font
 ```
 
-- Setup clang globally by adding this to ~/.clangd
+- Setup clangd globally by adding this to ~/.clangd
 
 ```
 CompileFlags:
