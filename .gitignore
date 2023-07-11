@@ -1,0 +1,8 @@
+.DS_Store
+iterm2/
+coc/
+neofetch/
+nvim.old/
+coc.old/
+Brewfile.lock.json
+nvim/plugin/packer_compiled.lua
