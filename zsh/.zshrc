@@ -18,6 +18,9 @@ setopt interactive_comments
 stty stop undef		# Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none')
 
+# vim bindings
+bindkey -v
+
 # beeping 
 unsetopt BEEP
 
