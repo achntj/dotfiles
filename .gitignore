@@ -8,3 +8,4 @@ Brewfile.lock.json
 nvim/plugin/packer_compiled.lua
 StardewValley/
 karabiner
+node_modules/
