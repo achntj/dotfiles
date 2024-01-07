@@ -17,6 +17,7 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
+-- https://medium.com/usevim/vim-101-set-hidden-f78800142855
 vim.opt.hidden = true
 
 -- search highlights incrementally
