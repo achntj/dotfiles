@@ -4,8 +4,8 @@ zmodload zsh/zprof
 
 # history
 export ZDOTDIR=$HOME/.config/zsh
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=1000000
+SAVEHIST=1000000
 HISTFILE="$ZDOTDIR/.zsh_history"
 setopt HIST_SAVE_NO_DUPS
 setopt appendhistory
@@ -60,12 +60,6 @@ compinit
 
 # Environment variables set everywhere
 export EDITOR="nvim"
-export BROWSER="brave"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-export GOPATH="$HOME/src/go"
-export PATH=$PATH:$GOPATH/bin
 
 # Run on startup
 #neofetch

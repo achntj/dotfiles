@@ -11,6 +11,8 @@
 brew bundle --file=~/.config/Brewfile
 ```
 
+- import itermPreferences in iterm2
+
 - Run
 
 ```
@@ -18,9 +20,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-- import itermPreferences in iterm2
-
-- PackerSync after sourcing (nvim)
+- Open packer.lua, run :so command. Then Run PackerInstall / PackerSync
 
 - Add Fira Code Nerd Font
 
@@ -28,6 +28,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 brew tap homebrew/cask-fonts &&
 brew install --cask font-fira-code-nerd-font
 ```
+
+- Change font in iterm, once installed.
 
 - Setup clangd globally by adding this to ~/.clangd
 
