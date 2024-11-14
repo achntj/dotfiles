@@ -19,7 +19,9 @@
         "javascript",
         "javascriptreact",
         "typescript",
-        "typescriptreact"
+        "typescriptreact",
+        "html",
+        "svelte"
       ],
 
       "rootPatterns": [
@@ -66,5 +68,6 @@
   ],
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "svelte.enable-ts-plugin": true
 }

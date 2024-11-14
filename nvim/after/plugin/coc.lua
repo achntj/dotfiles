@@ -12,7 +12,6 @@ vim.g.coc_global_extensions = {
 	"coc-prettier",
 	"coc-lua",
 	"coc-clangd",
-	"coc-pyright"
 }
 
 

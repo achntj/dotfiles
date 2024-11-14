@@ -4,8 +4,7 @@ return require('packer').startup(function(use)
 
   -- fuzzy finder
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
-    -- or                            , branch = '0.1.x',
+    'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
   -- treesitter
@@ -54,7 +53,6 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons' }
   }
 
-  -- switch to nvim-tree soon netrw is trash
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
@@ -84,7 +82,7 @@ return require('packer').startup(function(use)
 
   -- git shit
   use('tpope/vim-fugitive')
-  use('lewis6991/gitsigns.nvim')
+  -- use('lewis6991/gitsigns.nvim')
 
   -- markdown preview
   use({
