@@ -7,6 +7,7 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
+
   -- treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -23,13 +24,6 @@ return require('packer').startup(function(use)
     end
   })
 
-  -- highlighting and completions
-  use 'sheerun/vim-polyglot'
-  use {
-    'neoclide/coc.nvim',
-    branch = 'release'
-  }
-
   -- commenting
   use {
     'numToStr/Comment.nvim',
@@ -44,49 +38,17 @@ return require('packer').startup(function(use)
     config = function() require("nvim-autopairs").setup {} end
   }
 
-  -- godly plugin
-  use('tpope/vim-sleuth')
-
-  -- lualine
+  -- status line
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons' }
   }
 
+  -- file explorer
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
       'nvim-tree/nvim-web-devicons', -- optional
     },
   }
-
-  -- unnecessary startup dashboard
-  use {
-    'goolord/alpha-nvim',
-    requires = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      require 'alpha'.setup(require 'alpha.themes.startify'.config)
-    end
-  }
-
-  -- surround plugin
-  use({
-    "kylechui/nvim-surround",
-    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-    config = function()
-      require("nvim-surround").setup({
-        -- Configuration here, or leave empty to use defaults
-      })
-    end
-  })
-
-  -- git shit
-  use('tpope/vim-fugitive')
-  -- use('lewis6991/gitsigns.nvim')
-
-  -- markdown preview
-  use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
-  })
 end)
