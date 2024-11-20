@@ -1,7 +1,5 @@
 #!/bin/sh
 
-zmodload zsh/zprof
-
 # history
 export ZDOTDIR=$HOME/.config/zsh
 HISTSIZE=1000000
@@ -44,7 +42,7 @@ bindkey '^[OB'  down-line-or-beginning-search
 # Colors
 autoload -Uz colors && colors
 
-# Useful Functions
+#falso Useful Functions
 source "$ZDOTDIR/zsh-functions"
 
 # Normal files to source
@@ -54,15 +52,12 @@ zsh_add_file "zsh-prompt"
 
 # Plugins
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
-zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+zsh_add_plugin "zdharma-continuum/fast-syntax-highlighting"
 
 compinit
 
 # Environment variables set everywhere
 export EDITOR="nvim"
-
-# Run on startup
-#neofetch
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
