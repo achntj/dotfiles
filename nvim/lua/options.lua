@@ -45,8 +45,20 @@ vim.opt.laststatus = 3
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- Netrw config (disabled now)
--- vim.g.netrw_liststyle = 3
--- let g:netrw_banner = 0
--- vim.g.netrw_browse_split = 4
--- vim.g.netrw_winsize = 25
+vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
+  pattern = "*.py",
+  callback = function()
+    vim.opt.textwidth = 79
+    vim.opt.colorcolumn = "79"
+  end
+}) -- python formatting
+
+vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
+  pattern = {"*.js", "*.html", "*.css", "*.lua"},
+  callback = function()
+    vim.opt.tabstop = 2
+    vim.opt.softtabstop = 2
+    vim.opt.shiftwidth = 2
+  end
+}) -- javascript formatting
+

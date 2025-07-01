@@ -1,7 +1,4 @@
 vim.g.mapleader = " "
--- vim.keymap.set("n", "<C-n>", function()
---     vim.cmd("Lex!")
--- end)
 
 -- send replaced text to THE VOID
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -15,7 +12,7 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- open new tmux session
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+-- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 -- find and replace current word
 vim.keymap.set(
@@ -23,3 +20,12 @@ vim.keymap.set(
     "<leader>s",
     [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]]
 )
+
+-- buffers (TMUX style)
+vim.keymap.set("n", "<leader>n", ":bn<cr>")
+vim.keymap.set("n", "<leader>p", ":bp<cr>")
+vim.keymap.set("n", "<leader>x", ":bd<cr>")
+
+-- Diagnostics
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics for line" })
+

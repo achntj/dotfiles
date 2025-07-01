@@ -1,9 +1,12 @@
--- lua/plugins/nvim-tree.lua
+--
+-- COLORSCHEME
+--
+vim.cmd.colorscheme "mellow"
 
--- Global keymap for toggling NvimTree
-vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle<cr>", { silent = true, noremap = true })
+--
+-- NVIM TREE
+--
 
--- Function to define custom actions on NvimTree attachment
 local function my_on_attach(bufnr)
   local api = require "nvim-tree.api"
 
@@ -57,4 +60,3 @@ require("nvim-tree").setup({
     dotfiles = false,
   },
 })
-
