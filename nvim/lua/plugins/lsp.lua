@@ -41,7 +41,8 @@ return {
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
       require("mason-lspconfig").setup({
-        ensure_installed = { "pyright", "ts_ls", "html", "cssls", "tailwindcss" },
+        -- tsserver changed to ts_ls
+        ensure_installed = { "pyright", "ts_ls", "html", "cssls", "tailwindcss", "emmet_ls" },
         handlers = {
           function(server_name)
             lspconfig[server_name].setup({
@@ -50,6 +51,18 @@ return {
             })
           end,
         },
+      })
+
+      lspconfig.emmet_ls.setup({
+        capabilities = capabilities,
+        filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
+        init_options = {
+          html = {
+            options = {
+              ["bem.enabled"] = true,
+            },
+          },
+        }
       })
 
       lspconfig.pyright.setup({
