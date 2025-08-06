@@ -45,6 +45,7 @@ require("lazy").setup({
     end
   },
 
+  -- Formatting
   {
     "stevearc/conform.nvim",
     event = { "BufWritePre" },
@@ -69,6 +70,15 @@ require("lazy").setup({
         },
       })
     end,
+  },
+
+  -- Auto pairs
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equivalent to setup({}) function
   }
 
 })
