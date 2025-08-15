@@ -29,6 +29,8 @@ brew bundle --file=~/.config/Brewfile
 brew install --cask font-fira-code-nerd-font
 ```
 
+- Install miniconda and MacTex.
+
 ### Optionally do these
 
 - Setup clangd globally by adding this to ~/.clangd
