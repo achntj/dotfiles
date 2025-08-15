@@ -6,6 +6,7 @@
 - (On Existing devices only) Update brew
 - Clone this Directory (rename to .config AFTER cloning)
 - Add this to ~/.zprofile
+
 ```
 export ZDOTDIR="$HOME/.config/zsh"
 ```
@@ -38,4 +39,4 @@ brew install --cask font-fira-code-nerd-font
 ```
 CompileFlags:
     Add: [-std=c++17]
-`
+```
