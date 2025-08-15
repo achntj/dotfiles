@@ -7,3 +7,4 @@ alias python="python3"
 alias zsh_config="cd ~/.config/zsh; vim .zshrc;"
 alias show_time="cd ~/src/; ./world-clock.sh;"
 alias ll="ls -la;"
+alias conda_act='eval "$(/Users/achntj/miniconda3/bin/conda shell.zsh hook)"'
