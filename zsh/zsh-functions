@@ -14,19 +14,7 @@ function zsh_add_plugin() {
     fi
 }
 
-# git
-git_pushall() {
-    git add .
-    if [ -n "$1" ]
-    then
-        git commit -m "$1"
-    else
-        git commit -m update
-    fi
-        git push origin master
-}
-
 # cpp - single line compile
-cpp-build() {
-    g++ -std=c++17 -Wall "$1".cpp -o "$1"
-}
+# cpp-build() {
+#     g++ -std=c++17 -Wall "$1".cpp -o "$1"
+# }
