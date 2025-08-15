@@ -87,6 +87,10 @@
     "Alpha Component" : 1,
     "Green Component" : 0.75294119119644165
   },
+  "AWDS Pane Option" : "No",
+  "Keyboard Map" : {
+
+  },
   "Ansi 3 Color (Dark)" : {
     "Red Component" : 0.90196079015731812,
     "Color Space" : "sRGB",
@@ -94,9 +98,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.72549021244049072
   },
-  "Keyboard Map" : {
-
-  },
+  "AWDS Window Option" : "No",
   "Visual Bell" : true,
   "Cursor Text Color" : {
     "Red Component" : 1,
@@ -105,6 +107,7 @@
     "Alpha Component" : 1,
     "Green Component" : 1
   },
+  "AWDS Tab Directory" : "",
   "Scrollback Lines" : 0,
   "Selection Color (Light)" : {
     "Red Component" : 0.70196080207824707,
@@ -186,6 +189,7 @@
   "BM Growl" : true,
   "Prompt Before Closing 2" : false,
   "Command" : "",
+  "AWDS Tab Option" : "Recycle",
   "Selected Text Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -477,7 +481,7 @@
     "Alpha Component" : 0.25,
     "Green Component" : 0.77217715978622437
   },
-  "Custom Directory" : "Recycle",
+  "Custom Directory" : "Advanced",
   "Working Directory" : "\/Users\/achntj",
   "ASCII Anti Aliased" : true,
   "Shortcut" : "",
@@ -516,7 +520,6 @@
     "Green Component" : 0.7607843279838562
   },
   "Normal Font" : "FiraCodeNFM-Reg 18",
-  "Unlimited Scrollback" : true,
   "Ansi 12 Color (Light)" : {
     "Red Component" : 0.65349078178405762,
     "Color Space" : "sRGB",
@@ -524,6 +527,8 @@
     "Alpha Component" : 1,
     "Green Component" : 0.67044717073440552
   },
+  "AWDS Window Directory" : "",
+  "Unlimited Scrollback" : true,
   "Ansi 10 Color (Dark)" : {
     "Red Component" : 0.61568629741668701,
     "Color Space" : "sRGB",
@@ -553,7 +558,6 @@
     "Green Component" : 1
   },
   "Blur" : false,
-  "Use Separate Colors for Light and Dark Mode" : true,
   "Status Bar Layout" : {
     "components" : [
       {
@@ -561,20 +565,20 @@
         "configuration" : {
           "knobs" : {
             "base: priority" : 5,
-            "base: compression resistance" : 1,
             "shared text color" : {
               "Red Component" : 0.86000317335128784,
               "Color Space" : "P3",
               "Blue Component" : 0.63590961694717407,
               "Alpha Component" : 1,
               "Green Component" : 0.6414334774017334
-            }
+            },
+            "base: compression resistance" : 1
           },
           "layout advanced configuration dictionary value" : {
             "remove empty components" : false,
+            "auto-rainbow style" : 1,
             "font" : ".SFNS-Regular 12",
-            "algorithm" : 0,
-            "auto-rainbow style" : 1
+            "algorithm" : 0
           }
         }
       },
@@ -583,20 +587,20 @@
         "configuration" : {
           "knobs" : {
             "base: priority" : 5,
-            "base: compression resistance" : 1,
             "shared text color" : {
               "Red Component" : 0.72450786828994751,
               "Color Space" : "P3",
               "Blue Component" : 0.65540963411331177,
               "Alpha Component" : 1,
               "Green Component" : 0.89377599954605103
-            }
+            },
+            "base: compression resistance" : 1
           },
           "layout advanced configuration dictionary value" : {
             "remove empty components" : false,
+            "auto-rainbow style" : 1,
             "font" : ".SFNS-Regular 12",
-            "algorithm" : 0,
-            "auto-rainbow style" : 1
+            "algorithm" : 0
           }
         }
       },
@@ -605,20 +609,20 @@
         "configuration" : {
           "knobs" : {
             "base: priority" : 5,
-            "base: compression resistance" : 1,
             "shared text color" : {
               "Red Component" : 0.64865356683731079,
               "Color Space" : "P3",
               "Blue Component" : 0.8851432204246521,
               "Alpha Component" : 1,
               "Green Component" : 0.72423571348190308
-            }
+            },
+            "base: compression resistance" : 1
           },
           "layout advanced configuration dictionary value" : {
             "remove empty components" : false,
+            "auto-rainbow style" : 1,
             "font" : ".SFNS-Regular 12",
-            "algorithm" : 0,
-            "auto-rainbow style" : 1
+            "algorithm" : 0
           }
         }
       },
@@ -626,9 +630,8 @@
         "class" : "iTermStatusBarGitComponent",
         "configuration" : {
           "knobs" : {
-            "maxwidth" : 1.7976931348623157e+308,
+            "minwidth" : 0,
             "iTermStatusBarGitComponentPollingIntervalKey" : 2,
-            "base: priority" : 5,
             "shared text color" : {
               "Red Component" : 0.86000508069992065,
               "Color Space" : "P3",
@@ -636,25 +639,27 @@
               "Alpha Component" : 1,
               "Green Component" : 0.64143049716949463
             },
+            "base: priority" : 5,
             "base: compression resistance" : 1,
-            "minwidth" : 0
+            "maxwidth" : 1.7976931348623157e+308
           },
           "layout advanced configuration dictionary value" : {
             "remove empty components" : false,
+            "auto-rainbow style" : 1,
             "font" : ".SFNS-Regular 12",
-            "algorithm" : 0,
-            "auto-rainbow style" : 1
+            "algorithm" : 0
           }
         }
       }
     ],
     "advanced configuration" : {
       "remove empty components" : false,
-      "font" : ".SFNS-Regular 12",
-      "algorithm" : 0,
-      "auto-rainbow style" : 1
+      "auto-rainbow style" : 1,
+      "font" : ".AppleSystemUIFont 12",
+      "algorithm" : 0
     }
   },
+  "Use Separate Colors for Light and Dark Mode" : true,
   "Background Color (Light)" : {
     "Red Component" : 0.97999999999999998,
     "Color Space" : "sRGB",
@@ -712,6 +717,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.24931684136390686
   },
+  "AWDS Pane Directory" : "",
   "Ansi 0 Color (Light)" : {
     "Red Component" : 0.078431375324726105,
     "Color Space" : "sRGB",
