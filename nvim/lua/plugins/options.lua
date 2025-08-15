@@ -52,7 +52,6 @@ local function my_on_attach(bufnr)
   vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 end
 
--- NvimTree setup
 require("nvim-tree").setup({
   on_attach = my_on_attach,
   sort_by = 'extension',

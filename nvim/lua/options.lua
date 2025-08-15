@@ -17,7 +17,7 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
--- https://medium.com/usevim/vim-101-set-hidden-f78800142855
+-- open new files without saving current
 vim.opt.hidden = true
 
 -- search highlights incrementally
@@ -26,9 +26,11 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
+-- min # of lines around cursor
 vim.opt.scrolloff = 8
 -- always show sign column
 vim.opt.signcolumn = "yes"
+-- @ symbol is treated as part of a filename
 vim.opt.isfname:append("@-@")
 -- always show tabs
 vim.opt.showtabline = 2
@@ -39,6 +41,7 @@ vim.opt.updatetime = 50
 -- Line lenght marker at 80 columns
 vim.opt.colorcolumn = "80"
 
+-- set statusline to always, per nvim instance
 vim.opt.laststatus = 3
 
 -- disable netrw (NVIM TREE)
@@ -51,7 +54,7 @@ vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
     vim.opt.textwidth = 79
     vim.opt.colorcolumn = "79"
   end
-}) -- python formatting
+}) -- for python formatting
 
 vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
   pattern = { "*.js", "*.jsx", "*.ts", "*.tsx", "*.html", "*.css", "*.lua" },
@@ -60,5 +63,5 @@ vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
     vim.opt.softtabstop = 2
     vim.opt.shiftwidth = 2
   end
-}) -- javascript formatting
+}) -- for javascript formatting
 
